@@ -5,39 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merging table cells</title>
     <style>
-        caption{
-            text-align: center;
+       
+        table,td,th{
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
     <table  cellpadding="2">
-        <caption ><h3>My company limited</h3></caption>
+        <caption><h3>My company limited</h3></caption>
         <tr>
-            <th></th>
+            <th colspan="2"></th>
             <th>Clips</th>
             <th>Staples</th>
             <th>Pens</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td rowspan="3">Quater 1</td>
+            <td>Jan</td>
+            <td>2500</td>
+            <td>1400</td>
+            <td>1240</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Feb</td>
+            <td>3000</td>
+            <td>2500</td>
+            <td>4000</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>March</td>
+            <td>3200</td>
+            <td>1000</td>
+            <td>1240</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td rowspan="3">Quater 2</td>
+            <td>Apr</td>
+            <td>2500</td>
+            <td>100</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>3000</td>
+            <td>2500</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>3200</td>
+            <td>1200</td>
+            <td>1240</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Quater 3</td>
+            <td>July</td>
+            <td>250</td>
+            <td>100</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>August</td>
+            <td>300</td>
+            <td>2500</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>Sept</td>
+            <td>3200</td>
+            <td>10</td>
+            <td>4244</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Quater 4</td>
+            <td>Oct</td>
+            <td>25105</td>
+            <td>2527</td>
+            <td>53838</td>
+        </tr>
+        <tr>
+            <td>Nov</td>
+            <td>453</td>
+            <td>7525</td>
+            <td>8378</td>
+        </tr>
+        <tr>
+            <td>Dec</td>
+            <td>876387</td>
+            <td>87378</td>
+            <td>4578</td>
         </tr>
     </table>
 </body>
