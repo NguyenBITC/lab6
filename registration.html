@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h1{
+        text-align: center;
+        border-bottom: 5px solid #ccc;
+        color: #db2929;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .interests label {
+      margin-right: 10px;
+    }
+
+    .interests input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>REGISTRATION</h1>
+
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="password_confirmation">Re-type Password:</label>
+    <input type="password" id="password_confirmation" name="password_confirmation" required>
+
+    <label for="birthday">Birthday:</label>
+    <select id="birthday" name="birthday">
+      <option value="">Select Month</option>
+      <option value="january">January</option>
+      <option value="february">February</option>
+      <option value="march">March</option>
+      <option value="april">April</option>
+      <option value="may">May</option>
+      <option value="june">June</option>
+      <option value="july">July</option>
+      <option value="august">August</option>
+      <option value="september">September</option>
+      <option value="october">October</option>
+      <option value="november">November</option>
+      <option value="december">December</option>
+    </select>
+
+    <label for="image">Images:</label>
+    <input type="file" id="image" name="image">
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <label for="interests">Interests (optional):</label>
+    <div class="interests">
+      <label for="interest_entertainment"><input type="checkbox" id="interest_entertainment" name="interests[]" value="entertainment"> Entertainment</label>
+      <label for="interest_business"><input type="checkbox" id="interest_business" name="interests[]" value="business"> Business</label>
+      <label for="interest_home_and_family"><input type="checkbox" id="interest_home_and_family" name="interests[]" value="home_and_family">
+        <label for="interest_technology"><input type="checkbox" id="interest_technology" name="interests[]" value="technology"> Technology</label>
+        <label for="interest_sports"><input type="checkbox" id="interest_sports" name="interests[]" value="sports"> Sports</label>
+        <label for="interest_travel"><input type="checkbox" id="interest_travel" name="interests[]" value="travel"> Travel</label>
+        <label for="interest_food"><input type="checkbox" id="interest_food" name="interests[]" value="food"> Food</label>
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  
+  </body>
+  
+  </html>
+  
